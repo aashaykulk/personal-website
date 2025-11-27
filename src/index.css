@@ -166,7 +166,8 @@ th {
   font-weight: 700;
 }
 .width-min {
-  width: 0%;
+  width: 1%;
+  white-space: nowrap;
 }
 .width-auto {
   width: 100%;
@@ -464,4 +465,27 @@ label input {
 
 .debug-toggle-label {
   text-align: right;
+}
+/* Center the title cell content */
+.center-title {
+  text-align: center;
+}
+
+/* Even spacing for social cells */
+.header td.width-min,
+.header th.width-min {
+  width: calc(100% / 4);   /* 4 cells total in the social row */
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Ensure title alignment remains centered */
+.header h1 {
+  text-align: center;
+  margin: 0;
+}
+/* Override right-align rule from the last column in header rows */
+.header tr td:last-child,
+.header tr th:last-child {
+  text-align: center !important;
 }
