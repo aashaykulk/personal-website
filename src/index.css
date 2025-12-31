@@ -125,7 +125,7 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 em {
-  font-style: italic;
+  font-style: oblique; /* fakes italics by slanting the font */
 }
 
 sub {
